@@ -1,0 +1,395 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <title>Tarang - Architect</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="ThemeZaa">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+    <!-- favicon icon -->
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    <!-- style sheets and font icons  -->
+    <link rel="stylesheet" type="text/css" href="css/font-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="css/brands.min.css">
+    <link rel="stylesheet" type="text/css" href="css/theme-vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <script>
+        function generateCaptcha() {
+            // Generate two random numbers between 1 and 10
+            var num1 = Math.floor(Math.random() * 10) + 1;
+            var num2 = Math.floor(Math.random() * 10) + 1;
+
+            // Display the numbers in the form
+            document.getElementById('captcha').innerHTML = 'Please solve: ' + num1 + ' + ' + num2 + ' = ';
+
+            // Store the correct answer in a hidden field for validation
+            document.getElementById('captchaAnswer').value = num1 + num2;
+        }
+
+        function validateForm() {
+            // Get user's answer and the correct answer
+            var userAnswer = parseInt(document.getElementById('userAnswer').value);
+            var correctAnswer = parseInt(document.getElementById('captchaAnswer').value);
+
+            // Validate the CAPTCHA
+            if (userAnswer === correctAnswer) {
+                alert('CAPTCHA is correct. Form submission allowed!');
+                // Here, you can proceed with the form submission logic
+            } else {
+                alert('CAPTCHA is incorrect. Please try again.');
+                // Prevent form submission if CAPTCHA is incorrect
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body data-mobile-nav-style="classic">
+    <!-- start header -->
+    <header>
+        <nav
+            class="navbar navbar-expand-lg navbar-light bg-transparent header-light fixed-top navbar-boxed header-reverse-scroll">
+            <div class="container-fluid nav-header-container">
+                <div class="col-5 col-lg-2 ps-lg-0 me-auto me-lg-0">
+                    <a class="navbar-brand alt-font text-fast-blue font-weight-700" href="#"
+                        style="font-size: 2.75rem;">
+                        P
+                    </a>
+                </div>
+                <div class="col-auto col-lg-8 md-position-initial md-no-padding">
+                    <button class="navbar-toggler float-end" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-line"></span>
+                        <span class="navbar-toggler-line"></span>
+                        <span class="navbar-toggler-line"></span>
+                        <span class="navbar-toggler-line"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav alt-font">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="portfolio.html" class="nav-link">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="tarang-architect.html" class="nav-link">About Me</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-auto col-lg-2 text-end hidden-xs px-lg-0">
+                    <div class="header-social-icon d-inline-block">
+                        <a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- end header -->
+    <div class="main-content">
+        <!-- start section -->
+        <section class="cover-background p-0 pt-lg-0"
+            style="background: url(images/home-marketing-agency-bg-img-05.jpg)">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-12 col-xl-4 offset-xl-1 col-lg-5 col-md-8 order-lg-2 text-center text-lg-start d-none d-lg-block wow animate__fadeIn"
+                        data-wow-delay="0.4s">
+                        <img src="images/home-marketing-agency-img-02.png" class="margin-20px-bottom" alt="">
+                        <h4
+                            class="alt-font font-weight-300 text-extra-dark-gray letter-spacing-minus-1px w-85 margin-3-rem-bottom md-w-100">
+                            President's <span class="font-weight-600">message</span></h4>
+                        <span
+                            class="text-large text-white d-block w-85 margin-20px-bottom line-height-30px md-w-100">Diamonds
+                            are nothing more than chunks of coal that stuck to their jobs.</span>
+                        <p class=" text-white opacity-6 w-85 md-w-100">Lorem ipsum dolor sit amet consectetur adipiscing
+                            elit eiusmod tempor incididunt labore et dolore magna minim veniam nostrud exercitation
+                            ullamco.
+                        </p>
+                        <img src="images/home-restaurant-img-06.png"
+                            class="align-self-start margin-25px-top sm-no-margin-top" alt="">
+                    </div>
+                    <div class="col-10 col-lg-7 text-end order-lg-1">
+                        <div class="position-relative">
+                            <img src="images/tarang-architect.png" class=" wow animate__fadeIn" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+        <!-- start section -->
+        <section class="small-section">
+            <div class="container">
+                <div class="row align-items-center justify-content-around z-index-0 position-relative">
+                    <div class="col-12 col-lg-4 col-md-7 text-center text-lg-start last-paragraph-no-margin md-margin-30px-bottom xs-margin-30px-top  wow animate__fadeIn"
+                        data-wow-delay="0.2s">
+                        <span
+                            class="alt-font font-weight-600 text-extra-dark-gray text-large text-uppercase d-block margin-20px-bottom">
+                            brian miller - Founder of Tarang Infrastructure</span>
+                        <p class="text-large line-height-38px">I am a designer and frontend developer from Newyork, USA.
+                            I
+                            hold a master degree of web design from the world university.</p>
+                    </div>
+                    <div
+                        class="col-12 col-xl-6 offset-xl-1 col-lg-7 col-md-9 d-flex flex-column flex-sm-row align-items-center text-center text-sm-start">
+                        <div class="w-60 md-w-50 xs-w-100 xs-margin-15px-bottom wow animate__fadeInRight"
+                            data-wow-delay="0.4s">
+                            <span
+                                class="alt-font title-extra-large-heavy text-extra-dark-gray font-weight-600 letter-spacing-minus-7px d-block"><span
+                                    class="text-fast-blue font-weight-300 margin-35px-right">|</span>25<span
+                                    class="text-fast-blue font-weight-300 margin-35px-left">|</span></span>
+                        </div>
+                        <div class="w-40 padding-25px-left xs-w-100 xs-no-padding-left wow animate__fadeInRight"
+                            data-wow-delay="0.6s">
+                            <h5 class="alt-font font-weight-500 text-extra-dark-gray mb-0 letter-spacing-minus-1px">
+                                Years of big experience</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-4 row-cols-sm-2 margin-6-half-rem-top">
+                    <div class="col sm-margin-30px-bottom text-center text-sm-start d-flex flex-column justify-content-between h-100 wow animate__fadeIn"
+                        data-wow-delay="0.2s">
+                        <span
+                            class="alt-font font-weight-500 letter-spacing-1px d-block text-uppercase">Expertise</span>
+                        <span class="alt-font font-weight-500 text-extra-dark-gray d-block">Designing and web</span>
+                    </div>
+                    <div class="col sm-margin-30px-bottom text-center text-sm-start d-flex flex-column justify-content-between h-100 wow animate__fadeIn"
+                        data-wow-delay="0.4s">
+                        <span class="alt-font font-weight-500 letter-spacing-1px d-block text-uppercase">Born in</span>
+                        <span class="alt-font font-weight-500 text-extra-dark-gray d-block">Newyork, USA</span>
+                    </div>
+                    <div class="col xs-margin-30px-bottom text-center text-sm-start d-flex flex-column justify-content-between h-100 wow animate__fadeIn"
+                        data-wow-delay="0.6s">
+                        <span class="alt-font font-weight-500 letter-spacing-1px d-block text-uppercase">Date of
+                            birth</span>
+                        <span class="alt-font font-weight-500 text-extra-dark-gray d-block">26 December 1984</span>
+                    </div>
+                    <div class="col text-center text-sm-start d-flex flex-column justify-content-between h-100 wow animate__fadeIn"
+                        data-wow-delay="0.8s">
+                        <span
+                            class="alt-font font-weight-500 letter-spacing-1px d-block text-uppercase">Education</span>
+                        <span class="alt-font font-weight-500 text-extra-dark-gray d-block">Master of design</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+        <!-- start section -->
+        <section class="bg-light-gray">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-lg-3 row-cols-sm-2">
+                    <!-- start feature box item -->
+                    <div class="col md-margin-50px-bottom sm-margin-30px-bottom wow animate__fadeIn"
+                        data-wow-delay="0.2s">
+                        <div class="feature-box text-center">
+                            <div class="feature-box-icon margin-20px-bottom">
+                                <i class="feather icon-feather-phone-call icon-medium align-middle text-fast-blue"></i>
+                            </div>
+                            <div class="feature-box-content last-paragraph-no-margin">
+                                <span
+                                    class="alt-font font-weight-500 margin-10px-bottom d-block text-extra-dark-gray text-large text-uppercase">Let's
+                                    Talk</span>
+                                <p><a href="tel:+91 84605 12372"
+                                        class="text-fast-blue-hover text-extra-dark-gray text-extra-medium">+91 84605
+                                        12372</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end feature box item -->
+                    <!-- start feature box item -->
+                    <div class="col md-margin-50px-bottom sm-margin-30px-bottom wow animate__fadeIn"
+                        data-wow-delay="0.4s">
+                        <div class="feature-box text-center">
+                            <div class="feature-box-icon margin-20px-bottom">
+                                <!-- <i class="fa-brands fa-whatsapp icon-medium align-middle text-fast-blue"></i> -->
+                                <i class="icon-simple-line-pointer icon-medium align-middle text-fast-blue"></i>
+                            </div>
+                            <div class="feature-box-content last-paragraph-no-margin">
+                                <span
+                                    class="alt-font font-weight-500 margin-10px-bottom d-block text-extra-dark-gray text-large text-uppercase">Print
+                                    & Plot</span>
+                                <p class="d-inline-block w-70 lg-w-90 md-w-60 sm-w-80 xs-w-100"><a
+                                        href="https://maps.app.goo.gl/2Edpor2cZkiKJ8jy9"
+                                        class="text-fast-blue-hover text-extra-dark-gray text-extra-medium">Opp. Metro
+                                        Pillar No 28, Janata Nagar, Amraiwadi, Ahmedabad, Gujarat 380026</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end feature box item -->
+                    <!-- start feature box item -->
+                    <div class="col xs-margin-30px-bottom wow animate__fadeIn" data-wow-delay="0.3s">
+                        <div class="feature-box text-center">
+                            <div class="feature-box-icon margin-20px-bottom">
+                                <i class="feather icon-feather-mail icon-medium align-middle text-fast-blue"></i>
+                                <!-- <i
+                                    class="line-icon-Mail-Read icon-large text-fast-blue margin-30px-bottom md-margin-15px-bottom sm-margin-10px-bottom"></i> -->
+                            </div>
+                            <div class="feature-box-content last-paragraph-no-margin">
+                                <span
+                                    class="alt-font font-weight-500 margin-10px-bottom d-block text-extra-dark-gray text-large text-uppercase">E-mail
+                                    Us</span>
+                                <p><a href="mailto:info@printandplot.in"
+                                        class="text-fast-blue-hover text-extra-dark-gray text-extra-medium">info@printandplot.in</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end feature box item -->
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+        <!-- start section -->
+        <section class="small-section wow animate__fadeIn">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div
+                        class="col-12 col-md-6 text-center margin-2-rem-bottom md-margin-7-rem-bottom sm-margin-5-rem-bottom wow animate__fadeIn">
+                        <span
+                            class="alt-font font-weight-500 text-fast-blue text-uppercase d-block margin-10px-bottom letter-spacing-1px">Socials</span>
+                        <h4 class="alt-font font-weight-600 text-extra-dark-gray letter-spacing-minus-2px mb-0">Connect
+                            & Collaborate</h4>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 col-md-10 col-sm-12 text-center elements-social social-icon-style-09">
+                        <ul class="large-icon">
+                            <li><a class="facebook" href="https://www.facebook.com/" target="_blank"><i
+                                        class="fab fa-facebook-f"></i></a></li>
+                            <li><a class="whatsapp" href="https://www.whatsapp.com/" target="_blank"><i
+                                        class="fab fa-whatsapp"></i></a></li>
+                            <li><a class="twitter" href="http://www.twitter.com" target="_blank"><i
+                                        class="fab fa-twitter"></i></a></li>
+                            <li><a class="google" href="http://plus.google.com" target="_blank"><i
+                                        class="fab fa-google-plus-g"></i></a></li>
+                            <li><a class="dribbble" href="http://www.dribbble.com" target="_blank"><i
+                                        class="fab fa-dribbble"></i></a></li>
+                            <li><a class="linkedin" href="http://www.linkedin.com" target="_blank"><i
+                                        class="fab fa-linkedin-in"></i></a></li>
+                            <li><a class="instagram" href="http://www.instagram.com" target="_blank"><i
+                                        class="fab fa-instagram"></i></a></li>
+                            <li><a class="behance" href="http://www.behance.com/" target="_blank"><i
+                                        class="fab fa-behance"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+        <!-- start map section -->
+        <section class="no-padding-tb wow animate__fadeIn">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 px-0">
+                        <div class="map-style-3 h-500px xs-h-300px">
+                            <iframe class="w-100 h-100"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.083493870214!2d72.5903208749517!3d23.020706379175067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e87e9a5a7e4cb%3A0xc2a39e6d6b31a1c4!2sPRINT%20AND%20PLOT!5e0!3m2!1sen!2sin!4v1703510141579!5m2!1sen!2sin"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end map section -->
+        <!-- start section -->
+        <section class="half-section wow animate__fadeIn" id="contact-form">
+            <div class="container">
+                <div class="row align-items-end justify-content-center">
+                    <div class="col-12 col-lg-12 col-md-8">
+                        <h4 class="alt-font text-black font-weight-600">Get in touch with me</h4>
+                        <form action="email-templates/contact-form" method="post" class="alt-font text-extra-dark-gray">
+                            <input
+                                class="input-border-bottom border-color-extra-dark-gray bg-transparent placeholder-dark large-input px-0 margin-25px-bottom border-radius-0px required"
+                                type="text" name="name" placeholder="Your name" />
+                            <input
+                                class="input-border-bottom border-color-extra-dark-gray bg-transparent placeholder-dark large-input px-0 margin-25px-bottom border-radius-0px required"
+                                type="email" name="email" placeholder="Your email address" />
+                            <input
+                                class="input-border-bottom border-color-extra-dark-gray bg-transparent placeholder-dark large-input px-0 margin-25px-bottom border-radius-0px required"
+                                type="tel" name="phone" placeholder="Mobile no" />
+                            <textarea
+                                class="input-border-bottom border-color-extra-dark-gray bg-transparent placeholder-dark large-input px-0 margin-25px-bottom border-radius-0px required"
+                                name="comment" rows="5" placeholder="How can we help you?"></textarea>
+                            <div class="container">
+                                <div class="row row-cols-2 row-cols-lg-2 row-cols-sm-2"
+                                    style="justify-content: space-between;">
+                                    <label class="no-padding" id="captcha"></label>
+                                    <a type="button" onclick="generateCaptcha()"
+                                        class="btn btn-extra-small btn-rounded no-padding"><i
+                                            class="feather icon-feather-repeat icon-small align-middle"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <input type="text" id="userAnswer" name="userAnswer"
+                                class="input-border-bottom border-color-extra-dark-gray bg-transparent placeholder-dark large-input px-0 margin-25px-bottom border-radius-0px required"
+                                placeholder="Your Answer" />
+                            <input type="hidden" id="captchaAnswer" name="captchaAnswer" />
+                            <input type="hidden" name="redirect" value="">
+                            <button class="btn btn-medium btn-round-edge btn-dark-gray mb-0 submit" type="submit">send
+                                message</button>
+                            <div class="form-results d-none"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+    </div>
+    <!-- start footer -->
+    <footer class="bg-extra-dark-gray xs-padding-six-tb">
+        <div class="container-xxl">
+            <div class="padding-two-tb xs-no-padding-top">
+                <div class="row align-items-center justify-content-center">
+                    <!-- <div
+                        class="d-flex justify-content-center align-items-center col-xl-2 order-1 md-margin-30px-bottom margin-20px-tb">
+                        <a href="index"><img src="images/pp-favicon-2.png" data-at2x="images/pp-favicon-2.png" alt=""
+                                class="h-50px" /></a>
+                    </div> -->
+                    <div class="col-xl-7 order-1 md-margin-30px-bottom margin-20px-tb">
+                        <ul
+                            class="footer-horizontal-link d-flex flex-column flex-sm-row justify-content-sm-center justify-content-md-evenly align-items-center">
+                            <li><a href="index.html" class="text-white-hover text-large">Home</a></li>
+                            <li><a href="portfolio.html" class="text-white-hover text-large">Portfolio</a></li>
+                            <li><a href="about-us.html" class="text-white-hover text-large">About Me</a></li>
+
+                        </ul>
+                    </div>
+                    <div
+                        class="col-xl-3 order-1 d-flex justify-content-center align-items-center md-margin-30px-bottom margin-20px-tb">
+                        <span>
+                            &copy; 2024&nbsp;
+                            <span class="text-decoration-line-bottom text-white text-large">Tarang</span>
+                            &nbsp;All Rights Reserved.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <!-- start scroll to top -->
+    <a class="scroll-top-arrow" href="javascript:void(0);"><i class="feather icon-feather-arrow-up"></i></a>
+    <!-- end scroll to top -->
+    <!-- javascript -->
+    <script>
+        // Generate CAPTCHA when the page loads
+        window.onload = generateCaptcha;
+    </script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/theme-vendors.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/d0e5b2de91.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
