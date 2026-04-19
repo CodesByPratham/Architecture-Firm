@@ -18,35 +18,6 @@
     <link rel="stylesheet" type="text/css" href="css/theme-vendors.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
-    <script>
-        function generateCaptcha() {
-            // Generate two random numbers between 1 and 10
-            var num1 = Math.floor(Math.random() * 10) + 1;
-            var num2 = Math.floor(Math.random() * 10) + 1;
-
-            // Display the numbers in the form
-            document.getElementById('captcha').innerHTML = 'Please solve: ' + num1 + ' + ' + num2 + ' = ';
-
-            // Store the correct answer in a hidden field for validation
-            document.getElementById('captchaAnswer').value = num1 + num2;
-        }
-
-        function validateForm() {
-            // Get user's answer and the correct answer
-            var userAnswer = parseInt(document.getElementById('userAnswer').value);
-            var correctAnswer = parseInt(document.getElementById('captchaAnswer').value);
-
-            // Validate the CAPTCHA
-            if (userAnswer === correctAnswer) {
-                alert('CAPTCHA is correct. Form submission allowed!');
-                // Here, you can proceed with the form submission logic
-            } else {
-                alert('CAPTCHA is incorrect. Please try again.');
-                // Prevent form submission if CAPTCHA is incorrect
-                return false;
-            }
-        }
-    </script>
 </head>
 
 <body data-mobile-nav-style="classic">
@@ -55,13 +26,13 @@
         <nav
             class="navbar navbar-expand-lg navbar-light bg-transparent header-light fixed-top navbar-boxed header-reverse-scroll">
             <div class="container-fluid nav-header-container">
-                <div class="col-5 col-lg-2 ps-lg-0 me-auto me-lg-0">
+                <!-- <div class="col-auto ps-lg-0 me-auto">
                     <a class="navbar-brand alt-font text-fast-blue font-weight-700" href="#"
                         style="font-size: 2.75rem;">
-                        P
+                        TG
                     </a>
-                </div>
-                <div class="col-auto col-lg-8 md-position-initial md-no-padding">
+                </div> -->
+                <div class="col-auto md-position-initial md-no-padding ms-auto">
                     <button class="navbar-toggler float-end" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
                         <span class="navbar-toggler-line"></span>
@@ -69,27 +40,28 @@
                         <span class="navbar-toggler-line"></span>
                         <span class="navbar-toggler-line"></span>
                     </button>
-                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                        <ul class="navbar-nav alt-font">
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav alt-font ms-auto">
                             <li class="nav-item">
                                 <a href="index.html" class="nav-link">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a href="portfolio.html" class="nav-link">Portfolio</a>
+                                <a href="portfolio.html" class="nav-link">Projects</a>
                             </li>
                             <li class="nav-item">
                                 <a href="tarang-architect.html" class="nav-link">About Me</a>
                             </li>
-
-
                         </ul>
                     </div>
                 </div>
-                <div class="col-auto col-lg-2 text-end hidden-xs px-lg-0">
+                <div class="col-auto text-end hidden-xs px-lg-0">
                     <div class="header-social-icon d-inline-block">
-                        <a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="tel:+91 98253 94300" target="_blank"><i
+                                class="feather icon-feather-phone-call"></i></a>
+                        <a href="https://wa.me/919825394300?text=Hello%20Tarang" target="_blank"><i
+                                class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/ar_tarang_gohil?igsh=ejNuaThrNG15cW0y" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
@@ -107,16 +79,12 @@
                         <img src="images/home-marketing-agency-img-02.png" class="margin-20px-bottom" alt="">
                         <h4
                             class="alt-font font-weight-300 text-extra-dark-gray letter-spacing-minus-1px w-85 margin-3-rem-bottom md-w-100">
-                            Tarang's <span class="font-weight-600">message</span></h4>
+                            President's <span class="font-weight-600">message</span></h4>
                         <span class="text-large text-white d-block w-85 margin-20px-bottom line-height-30px md-w-100">We
                             design spaces not just to be seen, but to serve your life, your comfort, and your
                             story.</span>
-                        <!-- <p class=" text-white opacity-6 w-85 md-w-100">Lorem ipsum dolor sit amet consectetur adipiscing
-                            elit eiusmod tempor incididunt labore et dolore magna minim veniam nostrud exercitation
-                            ullamco.
-                        </p> -->
-                        <img src="images/home-restaurant-img-06.png"
-                            class="align-self-start margin-25px-top sm-no-margin-top" alt="">
+                        <img src="images/tarang-gohil-signature.png" class="align-self-start h-50px sm-no-margin-top"
+                            alt="">
                     </div>
                     <div class="col-10 col-lg-7 text-end order-lg-1">
                         <div class="position-relative">
@@ -126,13 +94,12 @@
                 </div>
             </div>
         </section>
-        <!-- end section -->\
+        <!-- end section -->
         <!-- start section -->
-        <section class="pb-3 pt-5 wow animate__fadeIn">
+        <!-- <section class="pb-3 padding-7-rem-top wow animate__fadeIn">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div
-                        class="col-12 col-md-6 text-center margin-2-rem-bottom md-margin-7-rem-bottom sm-margin-5-rem-bottom wow animate__fadeIn">
+                    <div class="col-12 col-md-6 text-center animate__fadeIn">
                         <span
                             class="alt-font font-weight-500 text-fast-blue text-uppercase d-block margin-10px-bottom letter-spacing-1px">Socials</span>
                         <h4 class="alt-font font-weight-600 text-extra-dark-gray letter-spacing-minus-2px mb-0">Connect
@@ -150,8 +117,6 @@
                                         class="fab fa-linkedin-in"></i></a></li>
                             <li><a class="facebook" href="https://www.facebook.com/" target="_blank"><i
                                         class="fab fa-facebook-f"></i></a></li>
-                            <li><a class="twitter" href="http://www.twitter.com" target="_blank"><i
-                                        class="fab fa-twitter"></i></a></li>
                             <li><a class="dribbble" href="http://www.dribbble.com" target="_blank"><i
                                         class="fab fa-dribbble"></i></a></li>
                             <li><a class="behance" href="http://www.behance.com/" target="_blank"><i
@@ -160,20 +125,40 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- end section -->
         <!-- start section -->
-        <section class="small-section">
+        <section class="pt-5 padding-7-rem-bottom wow animate__fadeIn">
             <div class="container">
                 <div class="row align-items-center justify-content-around z-index-0 position-relative">
                     <div class="col-12 col-lg-4 col-md-7 text-center text-lg-start last-paragraph-no-margin md-margin-30px-bottom xs-margin-30px-top  wow animate__fadeIn"
                         data-wow-delay="0.2s">
                         <span
                             class="alt-font font-weight-600 text-extra-dark-gray text-large text-uppercase d-block margin-20px-bottom">
-                            Tarang Gohil - Founder of 7 Square Architects</span>
-                        <p class="text-large line-height-38px">I am an architect based in Ahmedabad, India. Designing
-                            client-focused spaces that blends with modern aesthetics.
+                            Tarang Gohil</span>
+                        <p class="text-medium line-height-30px">I am an architect based in Ahmedabad, India,
+                            specializing
+                            in thoughtful and functional design solutions. I create spaces that blend aesthetics with
+                            practicality to enhance everyday living.
                         </p>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12 col-md-10 col-sm-12 text-center elements-social social-icon-style-09">
+                            <ul class="large-icon">
+                                <li><a class="whatsapp" href="https://www.whatsapp.com/" target="_blank"><i
+                                            class="fab fa-whatsapp"></i></a></li>
+                                <li><a class="instagram" href="http://www.instagram.com" target="_blank"><i
+                                            class="fab fa-instagram"></i></a></li>
+                                <li><a class="linkedin" href="http://www.linkedin.com" target="_blank"><i
+                                            class="fab fa-linkedin-in"></i></a></li>
+                                <li><a class="facebook" href="https://www.facebook.com/" target="_blank"><i
+                                            class="fab fa-facebook-f"></i></a></li>
+                                <li><a class="dribbble" href="http://www.dribbble.com" target="_blank"><i
+                                            class="fab fa-dribbble"></i></a></li>
+                                <li><a class="behance" href="http://www.behance.com/" target="_blank"><i
+                                            class="fab fa-behance"></i></a></li>
+                            </ul>
+                        </div>
                     </div>
                     <div
                         class="col-12 col-xl-6 offset-xl-1 col-lg-7 col-md-9 d-flex flex-column flex-sm-row align-items-center text-center text-sm-start">
@@ -191,26 +176,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="row row-cols-1 row-cols-md-4 row-cols-sm-2 margin-6-half-rem-top">
-                    <div class="col sm-margin-30px-bottom text-center text-sm-start d-flex flex-column justify-content-between h-100 wow animate__fadeIn"
+                <div class="row row-cols-1 row-cols-md-3 row-cols-sm-2 margin-4-half-rem-top">
+                    <div class="col sm-margin-30px-bottom text-center d-flex flex-column justify-content-between h-100 wow animate__fadeIn"
+                        data-wow-delay="0.4s">
+                        <span class="alt-font font-weight-500 letter-spacing-1px d-block text-uppercase">Situated
+                            in</span>
+                        <span class="alt-font font-weight-500 text-extra-dark-gray d-block">Ahmedabad, India</span>
+                    </div>
+                    <div class="col sm-margin-30px-bottom text-center d-flex flex-column justify-content-between h-100 wow animate__fadeIn"
                         data-wow-delay="0.2s">
                         <span
                             class="alt-font font-weight-500 letter-spacing-1px d-block text-uppercase">Expertise</span>
-                        <span class="alt-font font-weight-500 text-extra-dark-gray d-block">Architecture and
+                        <span class="alt-font font-weight-500 text-extra-dark-gray d-block">Architecture &
+                            Planning <br>Interior <br> Landscape
                             Design</span>
                     </div>
-                    <div class="col sm-margin-30px-bottom text-center text-sm-start d-flex flex-column justify-content-between h-100 wow animate__fadeIn"
-                        data-wow-delay="0.4s">
-                        <span class="alt-font font-weight-500 letter-spacing-1px d-block text-uppercase">Born in</span>
-                        <span class="alt-font font-weight-500 text-extra-dark-gray d-block">Ahmedabad, India</span>
-                    </div>
-                    <div class="col xs-margin-30px-bottom text-center text-sm-start d-flex flex-column justify-content-between h-100 wow animate__fadeIn"
-                        data-wow-delay="0.6s">
-                        <span class="alt-font font-weight-500 letter-spacing-1px d-block text-uppercase">Date of
-                            birth</span>
-                        <span class="alt-font font-weight-500 text-extra-dark-gray d-block">26 December 1984</span>
-                    </div>
-                    <div class="col text-center text-sm-start d-flex flex-column justify-content-between h-100 wow animate__fadeIn"
+                    <div class="col text-center d-flex flex-column justify-content-between h-100 wow animate__fadeIn"
                         data-wow-delay="0.8s">
                         <span
                             class="alt-font font-weight-500 letter-spacing-1px d-block text-uppercase">Education</span>
@@ -222,7 +203,7 @@
         </section>
         <!-- end section -->
         <!-- start section -->
-        <section class="bg-light-gray">
+        <section class="padding-7-rem-top padding-7-rem-bottom bg-light-gray">
             <div class="container">
                 <div class="row row-cols-1 row-cols-lg-3 row-cols-sm-2">
                     <!-- start feature box item -->
@@ -307,23 +288,16 @@
     <footer class="bg-extra-dark-gray xs-padding-six-tb">
         <div class="container-xxl">
             <div class="padding-two-tb xs-no-padding-top">
-                <div class="row align-items-center justify-content-center">
-                    <!-- <div
-                        class="d-flex justify-content-center align-items-center col-xl-2 order-1 md-margin-30px-bottom margin-20px-tb">
-                        <a href="index"><img src="images/pp-favicon-2.png" data-at2x="images/pp-favicon-2.png" alt=""
-                                class="h-50px" /></a>
-                    </div> -->
+                <div class="row align-items-center justify-content-around">
                     <div class="col-xl-7 order-1 md-margin-30px-bottom margin-20px-tb">
                         <ul
                             class="footer-horizontal-link d-flex flex-column flex-sm-row justify-content-sm-center justify-content-md-evenly align-items-center">
                             <li><a href="index.html" class="text-white-hover text-large">Home</a></li>
                             <li><a href="portfolio.html" class="text-white-hover text-large">Portfolio</a></li>
                             <li><a href="about-us.html" class="text-white-hover text-large">About Me</a></li>
-
                         </ul>
                     </div>
-                    <div
-                        class="col-xl-3 order-1 d-flex justify-content-center align-items-center md-margin-30px-bottom margin-20px-tb">
+                    <div class="col-xl-5 order-1 d-flex align-items-center md-margin-30px-bottom margin-20px-tb">
                         <span>
                             &copy; 2024&nbsp;
                             <span class="text-decoration-line-bottom text-white text-large">7 Square Architects</span>
@@ -339,15 +313,9 @@
     <a class="scroll-top-arrow" href="javascript:void(0);"><i class="feather icon-feather-arrow-up"></i></a>
     <!-- end scroll to top -->
     <!-- javascript -->
-    <script>
-        // Generate CAPTCHA when the page loads
-        window.onload = generateCaptcha;
-    </script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/theme-vendors.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-    <script src="https://kit.fontawesome.com/d0e5b2de91.js" crossorigin="anonymous"></script>
-
 </body>
 
 </html>
