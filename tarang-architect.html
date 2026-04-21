@@ -7,6 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="author" content="ThemeZaa">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+    <meta property="og:title" content="Tarang - Architect" />
+    <meta property="og:description"
+        content="We design spaces not just to be seen, but to serve your life, your comfort, and your story." />
+    <meta property="og:image" content="https://tarangarchitect.vercel.app/images/tarang-architect.png" />
+    <meta property="og:url" content="https://tarangarchitect.vercel.app/tarang-architect.html" />
+    <meta property="og:type" content="website" />
+
+    <!-- Optional but recommended -->
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <!-- favicon icon -->
     <link rel="shortcut icon" href="images/favicon.png">
     <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
@@ -18,6 +28,62 @@
     <link rel="stylesheet" type="text/css" href="css/theme-vendors.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <style>
+        .experience-counter-frame {
+            position: relative;
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 230px;
+            padding: 1rem 3.75rem;
+            text-align: center;
+        }
+
+        .experience-counter-frame::before,
+        .experience-counter-frame::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 6px;
+            background-color: #2f43f1;
+            border-radius: 4px;
+        }
+
+        .experience-counter-frame::before {
+            left: 0;
+        }
+
+        .experience-counter-frame::after {
+            right: 0;
+        }
+
+        .experience-counter-number {
+            line-height: 0.9;
+            margin-bottom: 0.35rem;
+        }
+
+        .experience-counter-label {
+            max-width: 220px;
+            max-height: 76px;
+            overflow: hidden;
+            line-height: 1.2;
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 767px) {
+            .experience-counter-frame {
+                min-height: 200px;
+                padding: 0.75rem 3rem;
+            }
+
+            .experience-counter-label {
+                max-height: 68px;
+                font-size: 1.7rem;
+            }
+        }
+    </style>
 </head>
 
 <body data-mobile-nav-style="classic">
@@ -26,12 +92,6 @@
         <nav
             class="navbar navbar-expand-lg navbar-light bg-transparent header-light fixed-top navbar-boxed header-reverse-scroll">
             <div class="container-fluid nav-header-container">
-                <!-- <div class="col-auto ps-lg-0 me-auto">
-                    <a class="navbar-brand alt-font text-fast-blue font-weight-700" href="#"
-                        style="font-size: 2.75rem;">
-                        TG
-                    </a>
-                </div> -->
                 <div class="col-auto md-position-initial md-no-padding ms-auto">
                     <button class="navbar-toggler float-end" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
@@ -96,55 +156,26 @@
         </section>
         <!-- end section -->
         <!-- start section -->
-        <!-- <section class="pb-3 padding-7-rem-top wow animate__fadeIn">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-6 text-center animate__fadeIn">
-                        <span
-                            class="alt-font font-weight-500 text-fast-blue text-uppercase d-block margin-10px-bottom letter-spacing-1px">Socials</span>
-                        <h4 class="alt-font font-weight-600 text-extra-dark-gray letter-spacing-minus-2px mb-0">Connect
-                            & Collaborate</h4>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-12 col-md-10 col-sm-12 text-center elements-social social-icon-style-09">
-                        <ul class="large-icon">
-                            <li><a class="whatsapp" href="https://www.whatsapp.com/" target="_blank"><i
-                                        class="fab fa-whatsapp"></i></a></li>
-                            <li><a class="instagram" href="http://www.instagram.com" target="_blank"><i
-                                        class="fab fa-instagram"></i></a></li>
-                            <li><a class="linkedin" href="http://www.linkedin.com" target="_blank"><i
-                                        class="fab fa-linkedin-in"></i></a></li>
-                            <li><a class="facebook" href="https://www.facebook.com/" target="_blank"><i
-                                        class="fab fa-facebook-f"></i></a></li>
-                            <li><a class="dribbble" href="http://www.dribbble.com" target="_blank"><i
-                                        class="fab fa-dribbble"></i></a></li>
-                            <li><a class="behance" href="http://www.behance.com/" target="_blank"><i
-                                        class="fab fa-behance"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        <!-- end section -->
-        <!-- start section -->
         <section class="pt-5 padding-7-rem-bottom wow animate__fadeIn">
             <div class="container">
-                <div class="row align-items-center justify-content-around z-index-0 position-relative">
-                    <div class="col-12 col-lg-4 col-md-7 text-center text-lg-start last-paragraph-no-margin md-margin-30px-bottom xs-margin-30px-top  wow animate__fadeIn"
+                <div class="row justify-content-center z-index-0 position-relative text-center">
+                    <div class="col-12 col-lg-8 col-md-10 last-paragraph-no-margin md-margin-30px-bottom xs-margin-30px-top wow animate__fadeIn"
                         data-wow-delay="0.2s">
-                        <span
-                            class="alt-font font-weight-600 text-extra-dark-gray text-large text-uppercase d-block margin-20px-bottom">
-                            Tarang Gohil</span>
-                        <p class="text-medium line-height-30px">I am an architect based in Ahmedabad, India,
+                        <h5
+                            class="alt-font font-weight-500 text-extra-dark-gray letter-spacing-minus-1px d-block margin-20px-bottom">
+                            Tarang Gohil</h5>
+                        <p class="text-large line-height-30px w-85 lg-w-90 md-w-100 mx-auto">I am an architect based
+                            in
+                            Ahmedabad, India,
                             specializing
-                            in thoughtful and functional design solutions. I create spaces that blend aesthetics with
+                            in thoughtful and functional design solutions. I create spaces that blend aesthetics
+                            with
                             practicality to enhance everyday living.
                         </p>
                     </div>
-                    <div class="row justify-content-center">
-                        <div class="col-lg-12 col-md-10 col-sm-12 text-center elements-social social-icon-style-09">
-                            <ul class="large-icon">
+                    <div class="col-12 margin-2-half-rem-top wow animate__fadeIn" data-wow-delay="0.3s">
+                        <div class="text-center elements-social social-icon-style-09">
+                            <ul class="medium-icon justify-content-center">
                                 <li><a class="whatsapp" href="https://www.whatsapp.com/" target="_blank"><i
                                             class="fab fa-whatsapp"></i></a></li>
                                 <li><a class="instagram" href="http://www.instagram.com" target="_blank"><i
@@ -160,23 +191,19 @@
                             </ul>
                         </div>
                     </div>
-                    <div
-                        class="col-12 col-xl-6 offset-xl-1 col-lg-7 col-md-9 d-flex flex-column flex-sm-row align-items-center text-center text-sm-start">
-                        <div class="w-60 md-w-50 xs-w-100 xs-margin-15px-bottom wow animate__fadeInRight"
-                            data-wow-delay="0.4s">
+                    <div class="col-12 col-xl-8 col-lg-9 col-md-10 text-center margin-3-rem-top wow animate__fadeIn"
+                        data-wow-delay="0.4s">
+                        <div class="experience-counter-frame mx-auto">
                             <span
-                                class="alt-font title-extra-large-heavy text-extra-dark-gray font-weight-600 letter-spacing-minus-7px d-block"><span
-                                    class="text-fast-blue font-weight-300 margin-35px-right">|</span>05<span
-                                    class="text-fast-blue font-weight-300 margin-35px-left">|</span></span>
-                        </div>
-                        <div class="w-40 padding-25px-left xs-w-100 xs-no-padding-left wow animate__fadeInRight"
-                            data-wow-delay="0.6s">
-                            <h5 class="alt-font font-weight-500 text-extra-dark-gray mb-0 letter-spacing-minus-1px">
-                                Years of big experience</h5>
+                                class="experience-counter-number alt-font title-large-2 text-extra-dark-gray font-weight-600 d-block">05</span>
+                            <h5
+                                class="experience-counter-label alt-font font-weight-500 text-extra-dark-gray letter-spacing-minus-1px">
+                                Years of experience</h5>
                         </div>
                     </div>
                 </div>
-                <div class="row row-cols-1 row-cols-md-3 row-cols-sm-2 margin-4-half-rem-top">
+                <div
+                    class="row row-cols-1 row-cols-md-3 row-cols-sm-2 justify-content-center margin-5-rem-top text-center">
                     <div class="col sm-margin-30px-bottom text-center d-flex flex-column justify-content-between h-100 wow animate__fadeIn"
                         data-wow-delay="0.4s">
                         <span class="alt-font font-weight-500 letter-spacing-1px d-block text-uppercase">Situated
@@ -229,7 +256,6 @@
                         data-wow-delay="0.4s">
                         <div class="feature-box text-center">
                             <div class="feature-box-icon margin-20px-bottom">
-                                <!-- <i class="fa-brands fa-whatsapp icon-medium align-middle text-fast-blue"></i> -->
                                 <i class="icon-simple-line-pointer icon-medium align-middle text-fast-blue"></i>
                             </div>
                             <div class="feature-box-content last-paragraph-no-margin">
@@ -250,15 +276,13 @@
                         <div class="feature-box text-center">
                             <div class="feature-box-icon margin-20px-bottom">
                                 <i class="feather icon-feather-mail icon-medium align-middle text-fast-blue"></i>
-                                <!-- <i
-                                    class="line-icon-Mail-Read icon-large text-fast-blue margin-30px-bottom md-margin-15px-bottom sm-margin-10px-bottom"></i> -->
                             </div>
                             <div class="feature-box-content last-paragraph-no-margin">
                                 <span
                                     class="alt-font font-weight-500 margin-10px-bottom d-block text-extra-dark-gray text-large text-uppercase">E-mail
                                     Us</span>
-                                <p><a href="mailto:info@7square.in"
-                                        class="text-fast-blue-hover text-extra-dark-gray text-extra-medium">info@7square.in</a>
+                                <p><a href="mailto:gohiltarang410@gmail.com"
+                                        class="text-fast-blue-hover text-extra-dark-gray text-extra-medium">gohiltarang410@gmail.com</a>
                                 </p>
                             </div>
                         </div>
