@@ -15043,6 +15043,10 @@ header .header-cart-icon .cart-count {
     width: 50%;
 }
 
+.grid li.full-width {
+    width: 100% !important;
+}
+
 /* grid 3 column */
 .grid.grid-3col li {
     width: 33.33%;
@@ -22225,7 +22229,7 @@ footer .instafeed-grid.gutter-double-extra-large {
     top: 50%;
     width: 0;
     height: 1px;
-    background: linear-gradient(to left, #3edfb6, #58e49a, #7ce878, #a5e850, #d0e51b) !important;
+    background: linear-gradient(135deg, #8ecfff 0%, #004aad 100%) !important;
     transition: width 0.3s ease-in-out !important;
 }
 
@@ -22246,7 +22250,7 @@ footer .instafeed-grid.gutter-double-extra-large {
     font-size: 18px;
     font-weight: 400;
     line-height: 20px;
-    color: #828282;
+    color: #ffffff;
     margin: 0 !important;
     padding: 0;
     transition: 0.3s ease-in-out;
